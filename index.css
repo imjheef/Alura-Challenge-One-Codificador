@@ -3,8 +3,15 @@ body{
   margin: 0 auto;
 }
 
-
+.aluraLogo{
+  padding: 2rem;
+  background-color: #0A3871;
+  color: #ffff;
+}
 .buttons{
+  position: absolute;
+  bottom: 100px;
+  left: 30rem;
   display: flex;
   gap: 24px
 }
@@ -22,7 +29,7 @@ body{
   color: #0A3871;
   border-style: none;
   border-radius: 24px;
-  padding: 0 24px;
+  padding: 24px 65px;
   border: solid 1px #0A3871;
   background-color: #D8DFE8;
 }
@@ -33,4 +40,24 @@ body{
 
 .encriptar:hover{
   cursor: pointer;
+}
+
+.enterText{
+  position: absolute;
+  top: -20rem;
+  left: 5rem;
+  background-color: #D8DFE8;
+  border-color: #0A3871;
+  border: solid 1px;
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+}
+
+.lateralSpace{
+  position: absolute;
+  margin: 0 2rem;
+  right: 0;
+  bottom: 4rem;
+  background-color: #ffff;
+  padding: 20rem 2rem;
 }
