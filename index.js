@@ -1,15 +1,19 @@
 let input = document.querySelector('input')
 let button = document.querySelector('button')
+let aside = document.querySelector('aside')
+let mensaje = document.querySelector('p')
+
+
+
+function alertMsg(){
+  document.querySelector('p').innerHTML = input.value
+  input.onmouseup = input.value = 'Enter message'
+}
+
 
 function clear() {
   input.value = ''
 }
 
-function alertMsg(){
-  alert(input.value)
-  input.onmouseup = input.value = 'Enter message'
-}
-
 button.onclick = alertMsg;
-input.onclick = clear;
-body.onclick =  clear;
+input.onclick =  clear;

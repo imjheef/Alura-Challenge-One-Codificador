@@ -8,11 +8,13 @@ body{
   background-color: #0A3871;
   color: #ffff;
 }
+
 .buttons{
+  display: flex;
   position: absolute;
+  margin: auto;
   bottom: 100px;
   left: 30rem;
-  display: flex;
   gap: 24px
 }
 
@@ -44,12 +46,12 @@ body{
 
 .enterText{
   position: absolute;
-  top: -20rem;
+  top: 12rem;
   left: 5rem;
   background-color: #D8DFE8;
   border-color: #0A3871;
   border: solid 1px;
-  padding: 1rem 5rem;
+  padding: 20rem 5rem;
   border-radius: 2rem;
 }
 
@@ -60,4 +62,5 @@ body{
   bottom: 4rem;
   background-color: #ffff;
   padding: 20rem 2rem;
+  border-radius: 2rem;
 }
