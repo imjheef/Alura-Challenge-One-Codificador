@@ -6,14 +6,8 @@ let mensaje = document.querySelector('p')
 
 
 function alertMsg(){
-  document.querySelector('p').innerHTML = textArea.value
-  textArea.onmouseup = textArea.value = 'Enter message'
-}
-
-
-function clear() {
-  textArea.value = ''
+  document.querySelector('h1').innerHTML = textArea.value
+  mensaje.innerHTML = ''
 }
 
 button.onclick = alertMsg;
-textArea.onclick =  clear;
