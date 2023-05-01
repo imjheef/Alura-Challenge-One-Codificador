@@ -1,6 +1,7 @@
 body{
   background-color: #D8DFE8;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .aluraLogo{
@@ -13,12 +14,13 @@ body{
   display: flex;
   position: absolute;
   margin: auto;
-  bottom: 100px;
+  bottom: 3rem;
   left: 30rem;
-  gap: 24px
+  gap: 24px;
+  filter: drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.1))
 }
 
-.encriptar{
+.encrypt{
   color: #ffff;
   border-style: none;
   border-radius: 24px;
@@ -27,7 +29,7 @@ body{
   
 }
 
-.decriptar{
+.decrypt{
   color: #0A3871;
   border-style: none;
   border-radius: 24px;
@@ -36,12 +38,15 @@ body{
   background-color: #D8DFE8;
 }
 
-.decriptar:hover{
+.decrypt:hover{
   cursor: pointer;
 }
 
-.encriptar:hover{
+.encrypt:hover{
   cursor: pointer;
+  background-color: #D8DFE8;
+  border: #0A3871 solid 1px;
+  color: #0A3871;
 }
 
 .enterText{
@@ -57,10 +62,16 @@ body{
 
 .lateralSpace{
   position: absolute;
-  margin: 0 2rem;
+  margin: 2rem;
   right: 0;
-  bottom: 4rem;
+  bottom: 10rem;
   background-color: #ffff;
-  padding: 20rem 2rem;
+  padding: 20rem;
   border-radius: 2rem;
+  filter: drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.1) );
+  animation: ease 200ms;
+}
+
+:textarea::after{
+  font-size: 700;
 }

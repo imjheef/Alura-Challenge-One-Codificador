@@ -1,4 +1,4 @@
-let input = document.querySelector('input')
+let textArea = document.querySelector('textarea')
 let button = document.querySelector('button')
 let aside = document.querySelector('aside')
 let mensaje = document.querySelector('p')
@@ -6,14 +6,14 @@ let mensaje = document.querySelector('p')
 
 
 function alertMsg(){
-  document.querySelector('p').innerHTML = input.value
-  input.onmouseup = input.value = 'Enter message'
+  document.querySelector('p').innerHTML = textArea.value
+  textArea.onmouseup = textArea.value = 'Enter message'
 }
 
 
 function clear() {
-  input.value = ''
+  textArea.value = ''
 }
 
 button.onclick = alertMsg;
-input.onclick =  clear;
+textArea.onclick =  clear;
