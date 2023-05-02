@@ -1,11 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
 body{
   font-family: Arial, sans-serif;
   background-color: #D8DFE8;
-  margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .aluraLogo{
+  display: inline-flex;
   padding: 2rem;
   background-color: #0A3871;
   color: #ffff;
@@ -54,7 +59,7 @@ body{
 .enterText{
   position: absolute;
   top: 12rem;
-  left: 5rem;
+  /* left: 5rem; */
   background-color: #D8DFE8;
   border-color: #0A3871;
   border: solid 1px;
@@ -62,18 +67,31 @@ body{
   border-radius: 2rem;
 }
 
+
 .lateralSpace{
   position: absolute;
   margin: 2rem;
+  top: 0  ;
   right: 0;
-  /* bottom: 10rem; */
+  bottom: 0;
+  /* height: minmax(1rem, 24rem); */
   background-color: #ffff;
-  padding: 22rem 5rem;
+  padding: 2rem 5rem;
   border-radius: 2rem;
   filter: drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.1) );
   animation: ease 200ms;
 }
 
-:textarea::after{
-  font-size: 700;
+textarea{
+  overflow: hidden;
+  width: minmax(3rem, 6rem);
+  height: 10rem;
+  font-size: 2rem;
+  resize: none;
+  border: 0 !important;
+  color: #0A3871;
+}
+
+textarea::placeholder{
+  color: #0A3871;
 }

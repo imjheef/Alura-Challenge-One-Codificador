@@ -7,7 +7,7 @@ let mensaje = document.querySelector('p')
 
 function alertMsg(){
   document.querySelector('h1').innerHTML = textArea.value
-  mensaje.innerHTML = ''
+  mensaje.onclick.innerHTML = '<a/>'
 }
 
 button.onclick = alertMsg;
