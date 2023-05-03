@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="index.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encriptador</title>
-</head>
+
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+  </head>
 
   <body>
 
     <header class="aluraLogo">
-      a
+      <img src="/images/Logo.png" alt="Logo de Alura">
     </header>
+    <section>
 
-<main>
-  <textarea placeholder="Enter text to decrypt" class="enterText" required></textarea>
-</main>
+      <textarea class="text-area" cols="30" rows="10" placeholder="Enter text to decrypt"></textarea>
+    </section>
 
-<aside class="lateralSpace">
-  <h1>Ningun mensaje fue encontrado</h1>
-    <p>Ingresa el texto que desees encriptar o desencriptar</p>
-  </aside>
-<div class="buttons">
-  <button class="encrypt">Encriptar</button>
-  <button class="decrypt">Decriptar</button>
-</div>
+    <aside class="lateralSpace">
+      <h1>Ningun mensaje fue encontrado</h1>
+      <p>Ingresa el texto a descifrar.</p>
+    </aside>
+    
+    <div class="buttons">
+      <p>Solo letras minúsculas y sin acentos</p>
+      <button class="encrypt">Encriptar</button>
+      <button class="decrypt">Descifrar</button>
+    </div>
 
-<script src="index.js"></script>
+    <script src="index.js"></script>
   </body>
+
 </html>
