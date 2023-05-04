@@ -10,19 +10,22 @@ body{
 }
 
 .aluraLogo{
-  display: inline-flex;
   padding: 2rem;
-  background-color: #0A3871;
-  color: #ffff;
 }
+
+/* BUTTONS */
 
 .buttons{
   display: flex;
   position: absolute;
-  margin: auto;
   bottom: 3rem;
   left: 10rem;
   gap: 24px;
+}
+
+/* BUTTON SHADOW */
+
+.encrypt, .decrypt{
   filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2))
 }
 
@@ -46,27 +49,18 @@ body{
 
 .decrypt:hover{
   cursor: pointer;
+  background-color: rgba(255, 255, 255, .1);
+  filter: brightness(150%);
 }
 
 .encrypt:hover{
   cursor: pointer;
-  background-color: #D8DFE8;
-  outline: #0A3871 solid 1px;
-  color: #0A3871;
-  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1))
+  background-color: #0A3871;
+  filter: brightness(150%);
 }
 
-.enterText{
-  position: absolute;
-  top: 12rem;
-  /* left: 5rem; */
-  background-color: #D8DFE8;
-  border-color: #0A3871;
-  border: solid 1px;
-  padding: 20rem 5rem;
-  border-radius: 2rem;
-}
 
+/* LATERAL SPACE */
 
 .lateralSpace{
   position: absolute;
@@ -74,7 +68,6 @@ body{
   top: 0  ;
   right: 0;
   bottom: 0;
-  /* height: minmax(1rem, 24rem); */
   background-color: #ffff;
   padding: 2rem 5rem;
   border-radius: 2rem;
@@ -82,16 +75,22 @@ body{
   animation: ease 200ms;
 }
 
-textarea{
+/* TEXT AREA */
+
+.text-area{
+  position: absolute;
   overflow: hidden;
-  width: minmax(3rem, 6rem);
-  height: 10rem;
-  font-size: 2rem;
   resize: none;
-  border: 0 !important;
+
+  padding: 2rem;
+  margin-left: 10rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+
+  background-color: #d8dfe870;
   color: #0A3871;
 }
 
-textarea::placeholder{
+.text-area::placeholder{
   color: #0A3871;
 }
