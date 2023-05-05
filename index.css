@@ -1,7 +1,6 @@
 *{
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
 }
 
 body{
@@ -62,14 +61,23 @@ body{
 
 /* LATERAL SPACE */
 
+aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40rem;
+  width: 25rem; 
+}
+
 .lateralSpace{
+
+  text-align: center;
   position: absolute;
+
   margin: 2rem;
-  top: 0  ;
   right: 0;
-  bottom: 0;
   background-color: #ffff;
-  padding: 2rem 5rem;
+  /* padding: 2rem; */
   border-radius: 2rem;
   filter: drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.1) );
   animation: ease 200ms;
