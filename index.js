@@ -1,7 +1,7 @@
-let textArea = document.querySelector('textarea')
+let textArea = document.querySelector(".text-area")
 let button = document.querySelector('button')
 let aside = document.querySelector('aside')
-let mensaje = document.querySelector('p')
+let mensaje = document.querySelector('.message')
 
 
 
