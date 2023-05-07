@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 *{
+  
   padding: 0;
   margin: 0;
 }
 
 body{
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #F3F5FC;
 }
 
@@ -22,10 +25,21 @@ body{
   gap: 24px;
 }
 
+.rules{
+  position: absolute;
+  top: -5rem;
+  color: darkgrey;
+}
+
 /* BUTTON SHADOW */
 
 .encrypt, .decrypt{
   filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2))
+}
+
+.encrypt:hover, .decrypt:hover{
+  filter: brightness(1.2) drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2));
+  cursor:pointer;
 }
 
 .encrypt{
@@ -46,13 +60,13 @@ body{
   background-color: #D8DFE8;
 }
 
-.decrypt:hover{
+.decrypt:active{
   cursor: pointer;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: #D8DFE8;
   filter: brightness(150%);
 }
 
-.encrypt:hover{
+.encrypt:active{
   cursor: pointer;
   background-color: #0A3871;
   filter: brightness(150%);
@@ -89,13 +103,15 @@ aside{
   position: absolute;
   overflow: hidden;
   resize: none;
+  outline: none;
+  border: none;
 
   padding: 2rem;
   margin-left: 10rem;
   border-radius: 2rem;
   font-size: 2rem;
 
-  background-color: #d8dfe870;
+  background-color: #F3F5FC;
   color: #0A3871;
 }
 
