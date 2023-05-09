@@ -6,8 +6,8 @@ let mensaje = document.querySelector('.message')
 
 
 function alertMsg(){
-  document.querySelector('h1').innerHTML = textArea.value
-  mensaje.onclick.innerHTML = '<a/>'
+  document.querySelector('p').innerHTML = textArea.value
+  mensaje.onclick.innerHTML = mensaje
 }
 
 button.onclick = alertMsg;
