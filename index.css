@@ -131,3 +131,48 @@ body{
 .text-area::placeholder{
   color: #0A3871;
 }
+
+@media (max-width: 1090px) {
+
+  body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+  .imgLateralSpace {
+    position: relative;
+    visibility: hidden;
+
+  }
+
+  .lateralSpace{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 10rem;
+    min-width: 10rem;
+  }
+
+  .text-area  {
+    position: absolute;
+    width: 688px;
+    height: 48px;
+    left: 40px;
+    top: 240px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+    
+    
+    /* Dark blue/dark-blue-300 */
+    
+    color: #0A3871;
+  }
+
+}
