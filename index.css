@@ -4,49 +4,50 @@
   font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing:border-box;
 }
 
 body{
   background-color: #F3F5FC;
 }
 
+/** HEADER */
+
 .aluraLogo{
-  padding: 2rem;
+  padding: .5rem 0;
 }
 
-/* BUTTONS */
+
+/** BUTTONS */
 .bntEncrypt{
   color: #ffff;
   border-style: none;
-  border-radius: 2rem;
-  padding: 1.5rem 6rem;
-  /* margin: 0 2rem; */
+  border-radius: 1.5rem;
+  padding: 1.5rem 9rem;
   background-color: #0A3871;
   
 }
 
 .btnDecrypt{
   border-style: none;
-  border-radius: 2rem;
-  padding: 1.5rem 6rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem 9rem;
   color: #0A3871;
-  outline: solid 1px #0A3871;
+  border: solid 1px #0A3871;
   background-color: #D8DFE8;
 }
 
 .buttons{
   display: flex;
-  /* flex-direction: column; */
-  position: absolute;
-  bottom: 3rem;
-  left: 10rem;
+  align-items: center;
+
   gap: 14px;
 }
 
 .rules{
   position: absolute;
   top: -3rem;
-  color: darkgrey;
+  color: rgb(239, 164, 164);
 }
 
 /* BUTTON SHADOW */
@@ -59,6 +60,7 @@ body{
   cursor: pointer;
   filter: brightness(1.1) drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2) );
 }
+
 
 .btnDecrypt:active, .bntEncrypt:active{
   cursor: pointer;
@@ -73,106 +75,210 @@ body{
   background-color: #0A3871;
 }
 
-/* MESSAGE CONTAINER */
+/**/
+
+/** MESSAGE CONTAINER */
 
 
 .container_msg{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 1rem;
-  gap: 16px;
+  gap: 24px;
 }
 
-/* LATERAL SPACE */
+/**/
+
+/** LATERAL SPACE */
 
 .lateralSpace{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  position: absolute;
-  max-height: 60rem;
-  min-height: 28rem;
+  max-height: 800px;
   width: 21rem; 
-  padding: 1rem;
   margin: 2rem;
-  bottom: 0;
-  right: 0;
-  top: 0;
   background-color: #ffff;
   border-radius: 2rem;
   filter: drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.2) );
-}
+} 
+/**/
 
-/* IMAGEN */
+/** IMAGEN */
 
 .imgLateralSpace{
-  width: 320px;
-  /* margin: 1rem; */
-  padding: 1rem;
+  width: 300px;
 }
+/**/
 
-/* TEXT AREA */
+/** TEXT AREA */
 
 .text-area{
-  position: absolute;
+  /* position: absolute; */
   overflow: hidden;
   resize: none;
-  outline: none;
   border: none;
+  outline: none;
   padding: 2rem;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   border-radius: 2rem;
   font-size: 2rem;
   background-color: #F3F5FC;
   color: #0A3871;
+
+}
+/** PLACEHOLDER */
+
+::placeholder{
+
+  color: #0A3871;
+}
+/**/
+
+
+.main-container{
+  /* width: auto; */
+  display: flex;
+  justify-content: space-between;
 }
 
-.text-area::placeholder{
+@media  (max-width: 1024px) {
+
+
+
+/** HEADER */
+
+.aluraLogo {
+  padding: 2rem;
+}
+
+
+/** BUTTONS */
+
+.btnEncrypt {
+  color: #ffff;
+  border-style: none;
+  border-radius: 1.5rem;
+  padding: 1.5rem 9rem;
+  background-color: #0A3871;
+}
+
+.btnDecrypt {
+  border-style: none;
+  border-radius: 1.5rem;
+  padding: 1.5rem 9rem;
+  color: #0A3871;
+  border: solid 1px #0A3871;
+  background-color: #D8DFE8;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 1rem;
+}
+
+.rules {
+  color: rgb(239, 164, 164);
+}
+
+/* BUTTON SHADOW */
+
+.btnEncrypt,
+.btnDecrypt {
+  filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2));
+}
+
+.btnEncrypt:hover,
+.btnDecrypt:hover {
+  cursor: pointer;
+  filter: brightness(1.1) drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2));
+}
+
+.btnDecrypt:active,
+.btnEncrypt:active {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+.btnDecrypt:active {
+  background-color: #D8DFE8;
+}
+
+.btnEncrypt:active {
+  background-color: #0A3871;
+}
+
+/**/
+
+/** MESSAGE CONTAINER */
+
+.container_msg {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 24px;
+}
+
+/**/
+
+/** LATERAL SPACE */
+
+.lateralSpace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* max-height: 60rem; */
+  /* min-height: 30rem; */
+  /* width: 21rem; */
+  /* margin: 2rem; */
+  background-color: #ffff;
+  border-radius: 2rem;
+  filter: drop-shadow(5px 15px 10px rgba(0, 0, 0, 0.2));
+}
+
+/**/
+
+/** IMAGE */
+
+.imgLateralSpace {
+  width: 300px;
+}
+
+/**/
+
+/** TEXT AREA */
+
+.text-area {
+  overflow: hidden;
+  resize: none;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 2rem;
+  background-color: #F3F5FC;
+  color: #0A3871;
+  /* border: red solid 1px */
+}
+
+/** PLACEHOLDER */
+
+::placeholder {
   color: #0A3871;
 }
 
-@media (max-width: 1090px) {
+/**/
 
-  body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-  }
-
-  .imgLateralSpace {
-    position: relative;
-    visibility: hidden;
-
-  }
-
-  .lateralSpace{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 10rem;
-    min-width: 10rem;
-  }
-
-  .text-area  {
-    position: absolute;
-    width: 688px;
-    height: 48px;
-    left: 40px;
-    top: 240px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    /* identical to box height, or 48px */
-    
-    
-    /* Dark blue/dark-blue-300 */
-    
-    color: #0A3871;
-  }
-
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2rem; */
+  min-height: auto;
+}
 }
