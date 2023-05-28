@@ -76,27 +76,17 @@ body{
 
 /**/
 
-/* * MESSAGE CONTAINER */
-
-
-/* .container_msg{
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 25px;
-} */
-
-/* */
 
 /** LATERAL SPACE */
 
 .lateralSpace{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  max-height: 800px;
+  padding: 1rem 0;
+  height: 42rem;
   width: 21rem;
   margin: 2rem;
   background-color: #ffff;
@@ -232,6 +222,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 200px;
   text-align: center;
   background-color: #ffff;
   border-radius: 2rem;
