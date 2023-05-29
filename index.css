@@ -14,53 +14,54 @@ body{
 /** HEADER */
 
 .aluraLogo{
-  padding: .5rem 0;
+  padding: 2rem;
 }
 
+
+main{
+  display: flex;
+  justify-content: space-between;
+}
 
 /** BUTTONS */
-.bntEncrypt{
-  color: #ffff;
-  border-style: none;
-  border-radius: 1.5rem;
-  padding: 1.5rem 9rem;
-  background-color: #0A3871;
-  
+
+.buttons{
+  margin: 2rem;
 }
 
-.btnDecrypt{
+.btn {
+  flex-grow: 1;
+  filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
   border-style: none;
-  border-radius: 1.5rem;
-  padding: 1.5rem 9rem;
-  color: #0A3871;
+  border-radius: 2rem;
+  padding: 1.5rem 6rem;
   border: solid 1px #0A3871;
+  background-color: #0A3871;
+}
+
+.btn:hover{
+  filter: brightness(1.1) drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2) );
+}
+
+.btn:active{
+  filter: brightness(120%);
+}
+
+.Encrypt{
+  color: #ffff;
+}
+
+.Decrypt{
+  color: #0A3871;
   background-color: #D8DFE8;
 }
-
 
 .rules{
   position: absolute;
   top: -3rem;
   color: rgb(239, 164, 164);
 }
-
-/** BUTTON SHADOW */
-
-.bntEncrypt, .btnDecrypt{
-  filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2));
-}
-
-.bntEncrypt:hover, .btnDecrypt:hover{
-  cursor: pointer;
-  filter: brightness(1.1) drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2) );
-}
-
-
-.btnDecrypt:active, .bntEncrypt:active{
-  cursor: pointer;
-  filter: brightness(120%);
-}
-
 
 /**/
 
@@ -84,13 +85,11 @@ body{
 /** TEXT AREA */
 
 .text-area{
-  /* position: absolute; */
   overflow: hidden;
   resize: none;
   border: none;
   outline: none;
   padding: 2rem;
-  /* margin-left: 10rem; */
   border-radius: 2rem;
   font-size: 2rem;
   background-color: #F3F5FC;
@@ -100,19 +99,20 @@ body{
 /** PLACEHOLDER */
 
 ::placeholder{
-
   color: #0A3871;
 }
 /**/
 
 
-main{
-  justify-content: space-between;
-}
 
 @media screen and (width < 1024px) {
 
-
+  main{
+    border: red solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 /** HEADER */
 
@@ -123,17 +123,21 @@ main{
 
 /** BUTTONS */
 
+.btnEncrypt, .btnDecrypt {
+  flex-grow: 1;
+}
+
 .btnEncrypt {
   color: #ffff;
   border-style: none;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   padding: 1.5rem 9rem;
   background-color: #0A3871;
 }
 
 .btnDecrypt {
   border-style: none;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   padding: 1.5rem 9rem;
   color: #0A3871;
   border: solid 1px #0A3871;
@@ -141,19 +145,24 @@ main{
 }
 
 .buttons {
-  gap: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
 }
 
 .rules {
   color: rgb(239, 164, 164);
 }
 
-/* BUTTON SHADOW */
+/** BUTTON SHADOW */
 
 .btnEncrypt,
 .btnDecrypt {
   filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2));
 }
+
 
 .btnEncrypt:hover,
 .btnDecrypt:hover {
@@ -201,7 +210,9 @@ main{
 /**/
 
 /** IMAGE */
+
 /* image will not show when width < 1024px; */
+
 .imgLateralSpace {
   display: none;
 }
@@ -216,10 +227,8 @@ main{
   border: none;
   outline: none;
   border-radius: 2rem;
-  font-size: 1.5rem;
   background-color: #F3F5FC;
   color: #0A3871;
-  /* border: red solid 1px */
 }
 
 /** PLACEHOLDER */
@@ -229,8 +238,4 @@ main{
 }
 
 /**/
-
-main{
-  align-items: center;
-}
 }
