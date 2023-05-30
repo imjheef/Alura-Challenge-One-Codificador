@@ -11,7 +11,14 @@ function btnEncrypt(){
   const textEncrypted = encrypt(textArea.value);
   message.value = textEncrypted;
   textArea.value = '';
-  message.style.backgroudImage = none;
+  message.style.backgroundImage = 'none';
+}
+
+function btnDecrypt(){
+  const textDecrypted = decrypt(textArea.value);
+  message.value = textDecrypted;
+  textArea.value = '';
+  message.style.backgroundImage = 'none';
 }
 
 function encrypt(stringEncrypted){
@@ -25,4 +32,17 @@ function encrypt(stringEncrypted){
       }
     }
     return stringEncrypted
+}
+
+function decrypt(stringDecrypted){
+  let arrayCode = [
+    ["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
+    stringDecrypted = stringDecrypted.toLowerCase()
+
+    for (let i = 0; i < arrayCode.length; i++) {
+      if (stringDecrypted.includes(arrayCode[i][1])) {
+        stringDecrypted = stringDecrypted.replaceAll(arrayCode[i][1], arrayCode[i][0])
+      }
+    }
+    return stringDecrypted
 }
