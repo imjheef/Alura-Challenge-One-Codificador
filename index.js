@@ -1,5 +1,9 @@
 let textArea = document.querySelector(".text-area")
 let message = document.querySelector('.message')
+let copy = document.querySelector(".copy");
+copyText.style.display = "none"
+
+
 
 /*  La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
@@ -45,4 +49,11 @@ function decrypt(stringDecrypted){
       }
     }
     return stringDecrypted
+}
+
+function copyText(){
+  message.select();
+  navigator.clipboard.writeText(message.value)
+  message.value = "";
+  alert("Copied to Clipboard")
 }
