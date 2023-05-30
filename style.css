@@ -56,7 +56,7 @@ section{
 
 .message{
   background-color: #fff;
-  background-image: url(/images/Muñeco.png);
+  background-image: url(images/Muñeco.png);
   background-repeat: no-repeat;
   border-radius: 2rem;
   width: 120px;
