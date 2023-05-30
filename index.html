@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+</head>
+<body>
 
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
-  </head>
+  <header>
+    <img class="logo" src="/images/Logo.png" alt="Alura's Logo">
+  </header>
 
-  <body>
-    <header class="aluraLogo">
-      <img src="/images/Logo.png" alt="Logo de Alura">
-    </header>
-<main>
-
-  <section>
-    <textarea class="text-area" placeholder="Ingrese el texto aqui"></textarea>
-  </section>
-  
-  <section class="lateralSpace">
-    
-    <div class="container_msg">
+  <main>
+    <section>
+      <textarea class="text-area" placeholder="Enter text here"></textarea>
       
-      <img class="imgLateralSpace" src="/images/Muñeco.png" alt="Una persona buscando con una lupa" >
-      <h1>Ningún mensaje fue encontrado</h1>
-      <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+      <div class="info">
+        <img src="images/ExclamationCircle.png" alt="">
+        <h6 class="information">solo letras minusculas y sin acentos</h6>   
+      </div>
       
-    </div>
-    
-  </section>
-</main>
-    
-    <div class="buttons">
-      <p class="rules" >* Solo letras minúsculas y sin acentos</p>
-      <button class="btn Encrypt">Encriptar</button>
-      <button class="btn Decrypt">Descifrar</button>
-    </div>
+      <div class="buttons">
+        <button class="btn encrypt">Encrypt</button>
+        <button class="btn decrypt">Decrypt</button>
+      </div>
+    </section>
 
-    <script src="index.js"></script>
-  </body>
+    <section>
+      <textarea class="message" cols="20" rows="10" placeholder=""></textarea>
+      <div>
+        <button class="btn copy">Copy</button>
+      </div>
+    </section>
 
+  </main>
+</body>
 </html>
