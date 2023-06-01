@@ -1,7 +1,7 @@
 let textArea = document.querySelector(".text-area")
 let message = document.querySelector('.message')
-let copy = document.querySelector(".copy");
-copyText.style.display = "none"
+let copyBtn = document.querySelector(".copy");
+// copyBtn.style.display = "none"
 
 
 
@@ -51,7 +51,7 @@ function decrypt(stringDecrypted){
     return stringDecrypted
 }
 
-function copyText(){
+function copyTextToClip(){
   message.select();
   navigator.clipboard.writeText(message.value)
   message.value = "";
