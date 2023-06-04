@@ -1,7 +1,7 @@
 let textArea = document.querySelector(".text-area")
 let message = document.querySelector('.message')
 let copyBtn = document.querySelector(".copy");
-// copyBtn.style.display = "none"
+copyBtn.style.display = 'none';
 
 
 
@@ -34,6 +34,8 @@ function encrypt(stringEncrypted){
       if (stringEncrypted.includes(arrayCode[i][0])) {
         stringEncrypted = stringEncrypted.replaceAll(arrayCode[i][0], arrayCode[i][1])
       }
+  copyBtn.style.display = "";
+
     }
     return stringEncrypted
 }
@@ -48,6 +50,7 @@ function decrypt(stringDecrypted){
         stringDecrypted = stringDecrypted.replaceAll(arrayCode[i][1], arrayCode[i][0])
       }
     }
+  copyBtn.style.display = "";
     return stringDecrypted
 }
 
@@ -55,5 +58,7 @@ function copyTextToClip(){
   message.select();
   navigator.clipboard.writeText(message.value)
   message.value = "";
+  copyBtn.style.display = "none"
+
   alert("Copied to Clipboard")
 }
