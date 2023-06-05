@@ -20,8 +20,6 @@ header{
 main{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 8px;
-  margin-bottom: 24px;
   justify-content: space-around;
 }
 
@@ -59,11 +57,8 @@ section{
   background-image: url("./images/sidebarImg.png");
   background-repeat: no-repeat;
   border-radius: 2rem;
-  width: 120px;
-  margin-top: 2rem;
-  margin-left: 1rem;
   padding: 5rem;
-  border: none;  
+  border: none;
   color: #0A3871;
   filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.2));
   resize: none;
@@ -117,4 +112,31 @@ div{
   margin-top: 14px;
   display: flex;
   justify-content: center;
+}
+
+
+/** MEDIA QUERY */
+
+@media (max-width: 900px) {
+
+  .buttons{
+    align-self: center;
+  }
+
+  .btn{
+    width: 100%;
+    height: 4rem;
+    align-self: center;
+  }
+
+  .message{
+    margin-top: 2rem;
+    padding: 0;
+    background-image: url('');
+  }
+
+  main{
+    display: block;
+    margin: 2rem;
+  }
 }
